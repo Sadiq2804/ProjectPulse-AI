@@ -35,3 +35,7 @@ class ProjectModel(BaseModel):
     summary: SummaryMetrics
     tasks: List[Task]
     comments: List[Comment]
+    budget_status: str | None = None
+    stakeholder_sentiment: str | None = None
+    blockers: list = []
+    milestone_health: str | None = None
