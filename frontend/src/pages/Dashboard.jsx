@@ -20,6 +20,7 @@ import ProgressCard from "../components/ProgressCard";
 import Summary from "../components/Summary";
 import TaskTable from "../components/TaskTable";
 import Downloads from "../components/Downloads";
+import Reasoning from "../components/Reasoning";
 
 export default function Dashboard() {
   const [file, setFile] = useState(null);
@@ -39,6 +40,8 @@ export default function Dashboard() {
   const [error, setError] = useState("");
 
   const [success, setSuccess] = useState("");
+
+  const [reasoning,setReasoning]=useState(null);
 
   async function upload() {
     if (!file) {
@@ -83,6 +86,11 @@ export default function Dashboard() {
         const healthRes = await api.get(`/health-score/${name}`);
 
         setHealth(healthRes.data);
+
+        const reasoningRes =
+await api.get(`/health/reasoning/${name}`);
+
+setReasoning(reasoningRes.data);
       } catch (err) {
         console.error("Health Error:", err);
       }
@@ -251,6 +259,8 @@ Recommendations
           <>
             <KPICards health={health} />
 
+            <Reasoning reasoning={reasoning}/>
+            
             <Charts health={health} />
 
             <RAGChart health={health} />
