@@ -58,7 +58,7 @@ Built as part of the Zycus AI Engineer evaluation.
 
 ---
 
-# 📂 Project Structure
+# 📂 Project Structures
 
 ```
 ProjectPulse-AI/
@@ -106,3 +106,29 @@ ProjectPulse-AI/
 ├── LICENSE
 └── .gitignore
 ```
+
+# 📸 Screenshots
+
+## Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+## KPI Cards
+
+![KPI Cards](screenshots/kpi_cards.png)
+
+## Project Summary
+
+![Summary](screenshots/summary.png)
+
+## Task Table
+
+![Task Table](screenshots/task_table.png)
+
+## PDF Report
+
+![PDF Report](screenshots/pdf_report.png)
+
+## PowerPoint Presentation
+
+![Presentation](screenshots/presentation.png)
