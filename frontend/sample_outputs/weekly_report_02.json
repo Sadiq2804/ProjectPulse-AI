@@ -1,0 +1,14 @@
+{
+ "project":"S2P Project",
+ "week":"Week 1",
+ "health":"Amber",
+ "score":72,
+ "risks":[
+   "Delayed procurement tasks",
+   "Pending approvals"
+ ],
+ "actions":[
+   "Review milestones",
+   "Assign task owners"
+ ]
+}
